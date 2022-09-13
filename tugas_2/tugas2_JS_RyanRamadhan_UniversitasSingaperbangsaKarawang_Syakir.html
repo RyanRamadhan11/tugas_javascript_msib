@@ -49,7 +49,7 @@
 					//deklarasi dan inisialisasi variabel
 					let jabatan, gapok, tunjab, tunkes, gator, agama, warna, zakat_profesi, takeHomePay;
 					
-					//struktur kendali if
+					//struktur kendali 
 					for (let i = 1; i <= 100; i++) {
 						if (i <= 25) {
 							jabatan = "Manager"
@@ -61,6 +61,7 @@
 							jabatan = "Staff"
 						}
 
+						//switch case
 						switch (jabatan) {
 							case "Manager":
 								gapok = 15000000;
@@ -79,12 +80,12 @@
 								break;
 						}
 
-						//rumus hitung 
+						//rumus hitung tunjangan jabatan, tunjangan kesehatan, dan gaji kotor
 						tunjab = (gapok * 20) / 100;
 						tunkes = (gapok * 10) / 100;
 						gator = gapok + tunjab + tunkes;
 
-						// ternary
+						//ternary
 						agama = (i % 2 == 1) ? "Muslim" : "Non Muslim";
 						warna = (agama == "Muslim") ? "yellow" : "aqua";
 						zakat_profesi = (agama == "Muslim" && gator >= 7000000) ? (gator * 2.5) / 100 : 0;
