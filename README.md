@@ -1,2 +1,4 @@
-# tugas2_javascript_msib
-Tugas 2 JavaScript MSIB || Kelompok 5 || Ryan Ramadhan 
+
+# tugas_javascript_msib
+Tugas Tugas JavaScript MSIB || Kelompok 5 || Ryan Ramadhan
+
