@@ -1,2 +1,2 @@
-# tugas1_javascript
-Tugas 1 JavaScript MSIB || Kelompok 5 || Ryan Ramadhan
+# tugas_javascript_msib
+Tugas Tugas JavaScript MSIB || Kelompok 5 || Ryan Ramadhan
