@@ -174,8 +174,10 @@
                      </tr>
                      </table>
                  `;
+        //inner html
         isi.innerHTML = data;
-        const output = new bootstrap.Modal("#modal");
+        // untuk menampilkan output bootstrap modal
+        const output = new bootstrap.Modal(document.getElementById("modal"));
         output.show();
       }
     </script>
