@@ -28,38 +28,27 @@
           <form id="form">
             <div class="mb-3">
               <label for="nama" class="form-label fw-bold">Nama Pembeli</label>
-              <input type="text" class="form-control" id="nama" name="nama" />
+              <input type="text" class="form-control" name="nama" />
             </div>
             <div class="mb-3">
               <label for="barang" class="form-label fw-bold">Nama Barang</label>
-              <input
-                type="text"
-                class="form-control"
-                id="barang"
-                name="barang"
-              />
+              <input type="text" class="form-control" name="barang" />
             </div>
             <div class="mb-3">
               <label for="harga" class="form-label fw-bold">Harga Barang</label>
-              <input type="text" class="form-control" id="harga" name="harga" />
+              <input type="text" class="form-control" name="harga" />
             </div>
             <div class="mb-3">
               <label for="jumlah" class="form-label fw-bold"
                 >Jumlah Barang</label
               >
-              <input
-                type="text"
-                class="form-control"
-                id="jumlah"
-                name="jumlah"
-              />
+              <input type="text" class="form-control" name="jumlah" />
             </div>
             <div class="mb-3">
               <label for="valas" class="form-label fw-bold">Valuta Asing</label>
               <select
                 class="form-select"
                 name="valas"
-                id="valas"
                 onchange="konversiKurs()"
               >
                 <option value="">-- Pilih Valas --</option>
@@ -113,35 +102,16 @@
 
     <!-- function -->
     <script>
-      // function mendapatkan value dari form
-      function getData() {
-        isi = document.getElementById("isi");
-        nama = document.getElementById("form").nama.value;
-        barang = document.getElementById("form").barang.value;
-        harga = document.getElementById("form").harga.value;
-        jumlah = document.getElementById("form").jumlah.value;
-        valas = document.getElementById("form").valas.value;
-
-        return {
-          isi,
-          nama,
-          barang,
-          harga,
-          jumlah,
-          valas,
-        };
-      }
-
-      // function konversi kurs dan inner html
+      // function konversi kurs
       function konversiKurs() {
-        let hasil = getData();
-        let total = hasil.harga * hasil.jumlah * hasil.valas,
-          nama = hasil.nama,
-          barang = hasil.barang,
-          harga = hasil.harga,
-          jumlah = hasil.jumlah,
-          valas = hasil.valas,
-          data = `<table>
+        let nama = document.getElementById("form").nama.value;
+        let barang = document.getElementById("form").barang.value;
+        let harga = document.getElementById("form").harga.value;
+        let jumlah = document.getElementById("form").jumlah.value;
+        let valas = document.getElementById("form").valas.value;
+        let total = harga * jumlah * valas;
+
+        let data = `<table>
                      <tr>
                          <td>Nama Pembeli</td>
                          <td>:</td>
@@ -175,6 +145,7 @@
                      </table>
                  `;
         //inner html
+        let isi = document.getElementById("isi");
         isi.innerHTML = data;
         // untuk menampilkan output bootstrap modal
         const output = new bootstrap.Modal(document.getElementById("modal"));
