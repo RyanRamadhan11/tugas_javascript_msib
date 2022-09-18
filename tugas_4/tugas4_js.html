@@ -76,8 +76,8 @@
       <div class="modal" tabindex="-1" id="modal">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header bg-info">
-              <h4 class="modal-title text-white">Data Pembelian</h4>
+            <div class="modal-header bg-success">
+              <h4 class="modal-title text-white">Data Pembelian Barang</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -85,12 +85,12 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body bg-info">
+            <div class="modal-body bg-success">
               <div class="alert alert-light" role="alert">
                 <div class="row" id="isi"></div>
               </div>
             </div>
-            <div class="modal-footer bg-info">
+            <div class="modal-footer bg-success">
               <button
                 type="button"
                 class="btn btn-dark"
@@ -175,8 +175,8 @@
                      </table>
                  `;
         isi.innerHTML = data;
-        const modal = new bootstrap.Modal("#modal");
-        modal.show();
+        const output = new bootstrap.Modal("#modal");
+        output.show();
       }
     </script>
   </body>
