@@ -76,6 +76,7 @@
             </div>
             <div class="modal-body bg-success">
               <div class="alert alert-light" role="alert">
+                <!-- //element yang ber id isi -->
                 <div class="row" id="isi"></div>
               </div>
             </div>
@@ -92,26 +93,26 @@
         </div>
       </div>
     </div>
+  </body>
+  <!-- import bootstrap js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
 
-    <!-- import bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+  <!-- function -->
+  <script>
+    // function konversi kurs
+    function konversiKurs() {
+      let nama = document.getElementById("form").nama.value;
+      let barang = document.getElementById("form").barang.value;
+      let harga = document.getElementById("form").harga.value;
+      let jumlah = document.getElementById("form").jumlah.value;
+      let valas = document.getElementById("form").valas.value;
+      let total = harga * jumlah * valas;
 
-    <!-- function -->
-    <script>
-      // function konversi kurs
-      function konversiKurs() {
-        let nama = document.getElementById("form").nama.value;
-        let barang = document.getElementById("form").barang.value;
-        let harga = document.getElementById("form").harga.value;
-        let jumlah = document.getElementById("form").jumlah.value;
-        let valas = document.getElementById("form").valas.value;
-        let total = harga * jumlah * valas;
-
-        let data = `<table>
+      let data = `<table>
                      <tr>
                          <td>Nama Pembeli</td>
                          <td>:</td>
@@ -144,13 +145,12 @@
                      </tr>
                      </table>
                  `;
-        //inner html
-        let isi = document.getElementById("isi");
-        isi.innerHTML = data;
-        // untuk menampilkan output bootstrap modal
-        const output = new bootstrap.Modal(document.getElementById("modal"));
-        output.show();
-      }
-    </script>
-  </body>
+      //inner html
+      let isi = document.getElementById("isi");
+      isi.innerHTML = data;
+      // untuk menampilkan output bootstrap modal
+      const output = new bootstrap.Modal(document.getElementById("modal"));
+      output.show();
+    }
+  </script>
 </html>
