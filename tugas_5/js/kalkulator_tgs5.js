@@ -6,10 +6,10 @@ function hitung(paramValue) {
   var a1 = parseFloat(formKalkulator.angka1.value);
   var a2 = parseFloat(formKalkulator.angka2.value);
 
-  // memanggil value tombol dengan parameter
-  var tombol = paramValue.value;
+  // memanggil value button dengan parameter
+  var button = paramValue.value;
 
-  switch (tombol) {
+  switch (button) {
     case "button_tambah":
       if (isNaN(a1) || isNaN(a2)) {
         alert("Data yang diinput harus berupa angka!!");
