@@ -12,7 +12,7 @@ function hitung(paramValue) {
   switch (button) {
     case "button_tambah":
       if (isNaN(angka1) || isNaN(angka2)) {
-        alert("Data yang diinput harus berupa angka!!");
+        alert("Data yang diinput harus berupa angka !!!");
       } else {
         var total = angka1 + angka2; //rumus
         formKalkulator.hasil.value = total; //penempatan hasil
@@ -21,7 +21,7 @@ function hitung(paramValue) {
 
     case "button_kurang":
       if (isNaN(angka1) || isNaN(angka2)) {
-        alert("Data yang diinput harus berupa angka!!");
+        alert("Data yang diinput harus berupa angka !!!");
       } else {
         var total = angka1 - angka2; //rumus
         formKalkulator.hasil.value = total; //penempatan hasil
@@ -30,7 +30,7 @@ function hitung(paramValue) {
 
     case "button_kali":
       if (isNaN(angka1) || isNaN(angka2)) {
-        alert("Data yang diinput harus berupa angka!!");
+        alert("Data yang diinput harus berupa angka !!!");
       } else {
         var total = angka1 * angka2; //rumus
         formKalkulator.hasil.value = total; //penempatan hasil
@@ -39,7 +39,7 @@ function hitung(paramValue) {
 
     case "button_bagi":
       if (isNaN(angka1) || isNaN(angka2)) {
-        alert("Data yang diinput harus berupa angka!!");
+        alert("Data yang diinput harus berupa angka !!!");
       } else {
         var total = angka1 / angka2; //rumus
         formKalkulator.hasil.value = total; //penempatan hasil
