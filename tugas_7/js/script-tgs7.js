@@ -2,7 +2,7 @@
 
 $("document").ready(function () {
   //hewan unggas
-  $("#penguin").click(function () {
+  $("#btn-penguin").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -13,7 +13,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#angsa").click(function () {
+  $("#btn-angsa").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -24,7 +24,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#ayam").click(function () {
+  $("#btn-ayam").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -35,7 +35,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#burung").click(function () {
+  $("#btn-burung").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -47,7 +47,7 @@ $("document").ready(function () {
   });
 
   //hewan ternak
-  $("#kelinci").click(function () {
+  $("#btn-kelinci").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -58,7 +58,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#sapi").click(function () {
+  $("#btn-sapi").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -69,7 +69,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#kambing").click(function () {
+  $("#btn-kambing").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -80,7 +80,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#bebek").click(function () {
+  $("#btn-bebek").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -92,7 +92,7 @@ $("document").ready(function () {
   });
 
   // hewan buas
-  $("#beruang").click(function () {
+  $("#btn-beruang").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -103,7 +103,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#serigala").click(function () {
+  $("#btn-serigala").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -114,7 +114,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#singa").click(function () {
+  $("#btn-singa").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
@@ -125,7 +125,7 @@ $("document").ready(function () {
       .appendTo("img");
   });
 
-  $("#harimau").click(function () {
+  $("#btn-harimau").click(function () {
     $(this).find("img").removeClass("d-none");
     $("<audio></audio>")
       .attr({
