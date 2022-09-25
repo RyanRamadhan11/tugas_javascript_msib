@@ -1,0 +1,297 @@
+<!-- Ryan Ramadhan || Kelompok 5 || Universitas Singaperbangsa Karawang || Fullstack Web Developer -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tugas 7 JavaScript || Ryan Ramadhan</title>
+
+    <!-- import bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- import icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- import css eksternal -->
+    <link rel="stylesheet" type="text/css" href="css/style_tgs7.css" />
+  </head>
+  <body>
+    <div class="alert judul" role="alert">
+      <h3 align="center">Macam Macam Hewan dan Suaranya</h3>
+      <a href="https://youtu.be/tXx_eElJOLo"
+        >Silahkan klik untuk menonton versi vidio</a
+      >
+    </div>
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header acc" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+            Macam Macam Hewan Unggas dan Suaranya
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card bg-black" id="penguin">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/penguin.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Penguin
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="angsa">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/angsa.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Angsa
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="ayam">
+                    <div class="card-body">
+                      <img src="assets/images/ayam.jpg" class="d-none" alt="" />
+                      <button class="btn btn-warning w-100 fw-bold">
+                        <i class="bi bi-play-btn p-2"></i> Suara Ayam
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="burung">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/burung.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Burung
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            Macam Macam Hewan Ternak dan Suaranya
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card bg-black" id="kelinci">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/Kelinci.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Kelinci
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="sapi">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/sapi.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Sapi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="kambing">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/kambing.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Kambing
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="bebek">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/bebek.jpeg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Bebek
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Macam Macam Hewan Buas dan Suaranya
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card bg-black" id="beruang">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/beruang.jpeg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Beruang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card bg-black" id="serigala">
+                    <div class="card-body">
+                      <img
+                        src="assets/images/serigala.jpg"
+                        class="d-none"
+                        alt=""
+                      />
+                      <button class="btn btn-warning fw-bold w-100">
+                        <i class="bi bi-play-btn p-2"></i> Suara Serigala
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-black" id="singa">
+                        <div class="card-body">
+                          <img
+                            src="assets/images/singa.jpg"
+                            class="d-none"
+                            alt=""
+                          />
+                          <button class="btn btn-warning w-100 fw-bold">
+                            <i class="bi bi-play-btn p-2"></i> Suara Singa
+                          </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-black" id="harimau">
+                        <div class="card-body">
+                          <img
+                            src="assets/images/harimau.jpg"
+                            class="d-none"
+                            alt=""
+                          />
+                          <button class="btn btn-warning fw-bold w-100">
+                            <i class="bi bi-play-btn p-2"></i> Suara Harimau
+                          </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h5 class="text-white" align="center">
+        Design By : Ryan Ramadhan || Kelompok 5
+      </h5>
+    </div>
+
+    <!-- import jquery -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <!-- import js custom eksternal -->
+    <script src="js/script-tgs7.js"></script>
+
+    <!-- import js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
